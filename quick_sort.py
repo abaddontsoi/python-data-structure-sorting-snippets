@@ -1,6 +1,5 @@
 depth_counter = 0
 
-
 def partition(arr, left, right, parti_record: list):
     pivot_value = arr[left]
 
@@ -42,19 +41,3 @@ def quick_sort(arr,left,right, parti_record:list, message=""):
         # quick_sort(arr, left, pivot_index - 1, parti_record)
         # quick_sort(arr, pivot_index + 1, right, parti_record)
         depth_counter-=1
-
-
-
-
-record = []
-arr_list = [4,3,2,1,5,6,7]
-
-quick_sort(arr_list, 0, len(arr_list)-1, record, f"original list {arr_list}")
-
-print(arr_list)
-
-
-print('\nrecords: ')
-for item in record:
-    print(item, end="\t")
-    print(record.index(item))

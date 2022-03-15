@@ -16,9 +16,3 @@ def insertionSort(arr):
 
         print(f'{i}th pass: ', end='')
         print(arr)
-
-arr = [1,2,3,4,4,1,12,2]
-
-insertionSort(arr)
-
-print(arr)

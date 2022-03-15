@@ -20,10 +20,6 @@ def selection_sort(arr):
     print("Sorted, ascending: ", end='')
     print(arr)
 
-arr = [5,3,1,3,5,76,1]
-
-selection_sort(arr)
-
 # descendingly sort the list
-def selection_sort_reverse(arr):
+def reverse_selectionSort(arr):
     pass

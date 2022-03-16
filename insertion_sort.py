@@ -18,8 +18,8 @@ def insertionSort(arr):
         arr[j + 1] = key
 
         print(f'{i}th pass result: ', end='')
-        print(arr)
-        print('')
+
+    return arr
 
 
 def reverse_insertionSort(arr):
@@ -46,3 +46,5 @@ def reverse_insertionSort(arr):
         print(f'{i}th pass result: ', end='')
         print(arr)
         print('')
+
+    return arr

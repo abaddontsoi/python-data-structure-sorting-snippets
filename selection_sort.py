@@ -22,7 +22,8 @@ def selection_sort(arr):
         print(arr)
 
     print("Sorted, ascending: ", end='')
-    print(arr)
+
+    return arr
 
 # descendingly sort the list
 def reverse_selectionSort(arr):
@@ -49,4 +50,5 @@ def reverse_selectionSort(arr):
         print(arr)
 
     print("Sorted, descending: ", end='')
-    print(arr)
+
+    return arr

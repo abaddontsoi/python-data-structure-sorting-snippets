@@ -82,3 +82,5 @@ def quick_sort(arr,left,right, parti_record:list, message="", mode='normal'):
 
         # subtract 1 beacuse is returning to previous level
         depth_counter-=1
+
+    return arr

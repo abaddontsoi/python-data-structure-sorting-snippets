@@ -26,7 +26,7 @@ def bubble_sort(our_list):
             print(our_list[j+2:])
             # print('')
 
-        print(f"{i+1}th pass result: ", end='')
+        print(f"{i+1}th pass result: {our_list}")
 
     return our_list
 
@@ -59,5 +59,5 @@ def reverse_bubbleSort(our_list):
             print(our_list[j+2:])
             # print('')
 
-        print(f"{i+1}th pass result: ", end='')
+        print(f"{i+1}th pass result: {our_list}")
     return our_list

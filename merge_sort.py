@@ -89,7 +89,7 @@ def reverseMerge(arr, left, middle, right):
     # Copy the remaining elements of R[], if there
     # are any
     while j_pointer < n2:
-        print(f"{R[i_pointer]} inserted into index {k} of {arr}")
+        print(f"{R[j_pointer]} inserted into index {k} of {arr}")
         arr[k] = R[j_pointer]
         j_pointer += 1
         k += 1

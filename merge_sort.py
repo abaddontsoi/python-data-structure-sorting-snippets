@@ -25,6 +25,8 @@ def merge(arr, left, middle, right):
             arr[k] = L[i_pointer]
             i_pointer += 1
         else:
+            print(f"{L[i_pointer]} > {R[j_pointer]}")
+            print(f"{R[j_pointer]} inserted into index {k} of {arr}")
             arr[k] = R[j_pointer]
             j_pointer += 1
         k += 1
@@ -32,6 +34,7 @@ def merge(arr, left, middle, right):
     # Copy the remaining elements of L[], if there
     # are any
     while i_pointer < n1:
+        print(f"{L[i_pointer]} inserted into index {k} of {arr}")
         arr[k] = L[i_pointer]
         i_pointer += 1
         k += 1
@@ -39,6 +42,7 @@ def merge(arr, left, middle, right):
     # Copy the remaining elements of R[], if there
     # are any
     while j_pointer < n2:
+        print(f"{R[j_pointer]} inserted into index {k} of {arr}")
         arr[k] = R[j_pointer]
         j_pointer += 1
         k += 1
@@ -63,9 +67,13 @@ def reverseMerge(arr, left, middle, right):
 
     while i_pointer < n1 and j_pointer < n2:
         if L[i_pointer] > R[j_pointer]:
+            print(f"{L[i_pointer]} > {R[j_pointer]}")
+            print(f"{L[i_pointer]} inserted into index {k} of {arr}")
             arr[k] = L[i_pointer]
             i_pointer += 1
         else:
+            print(f"{L[i_pointer]} < {R[j_pointer]}")
+            print(f"{R[j_pointer]} inserted into index {k} of {arr}")
             arr[k] = R[j_pointer]
             j_pointer += 1
         k += 1
@@ -73,6 +81,7 @@ def reverseMerge(arr, left, middle, right):
     # Copy the remaining elements of L[], if there
     # are any
     while i_pointer < n1:
+        print(f"{L[i_pointer]} inserted into index {k} of {arr}")
         arr[k] = L[i_pointer]
         i_pointer += 1
         k += 1
@@ -80,6 +89,7 @@ def reverseMerge(arr, left, middle, right):
     # Copy the remaining elements of R[], if there
     # are any
     while j_pointer < n2:
+        print(f"{R[i_pointer]} inserted into index {k} of {arr}")
         arr[k] = R[j_pointer]
         j_pointer += 1
         k += 1
